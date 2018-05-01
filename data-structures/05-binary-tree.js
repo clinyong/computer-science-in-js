@@ -23,14 +23,14 @@ function postOrderTraverse(root) {
     return list;
 }
 
-function inOrderTraverse(root) {
+function middleOrderTraverse(root) {
     let list = [];
     if (root.left) {
-        list = list.concat(inOrderTraverse(root.left));
+        list = list.concat(middleOrderTraverse(root.left));
     }
     list.push(root.data);
     if (root.right) {
-        list = list.concat(inOrderTraverse(root.right));
+        list = list.concat(middleOrderTraverse(root.right));
     }
 
     return list;
@@ -49,7 +49,7 @@ function preOrderTraverse(root) {
     return list;
 }
 
-module.exports = class BinaryTree {
+class BinaryTree {
     /**
      * Given inorder and postorder traversal of a tree, construct the binary tree.
      * @param {number[]} inOrderList
@@ -96,11 +96,19 @@ module.exports = class BinaryTree {
         return preOrderTraverse(this.root);
     }
 
-    inOrderTraverse() {
-        return inOrderTraverse(this.root);
+    middleOrderTraverse() {
+        return middleOrderTraverse(this.root);
     }
 
     postOrderTraverse() {
         return postOrderTraverse(this.root);
     }
+}
+
+module.exports = {
+    Node,
+    BinaryTree,
+    preOrderTraverse,
+    middleOrderTraverse,
+    postOrderTraverse
 };

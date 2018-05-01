@@ -1,5 +1,5 @@
 import test from "ava";
-import BinaryTree from "../05-binary-tree";
+import { BinaryTree } from "../05-binary-tree";
 
 test("traverse", t => {
     const preOrderList = "1245367".split("");
@@ -8,6 +8,6 @@ test("traverse", t => {
     const tree = new BinaryTree(inOrderList, postOrderList);
 
     t.deepEqual(tree.preOrderTraverse(), preOrderList);
-    t.deepEqual(tree.inOrderTraverse(), inOrderList);
+    t.deepEqual(tree.middleOrderTraverse(), inOrderList);
     t.deepEqual(tree.postOrderTraverse(), postOrderList);
 });
