@@ -17,6 +17,8 @@ module.exports = class SinglyLinkedList {
         } else {
             this.head = node;
         }
+
+        return node;
     }
 
     addAtTail(data) {
@@ -33,6 +35,8 @@ module.exports = class SinglyLinkedList {
         } else {
             this.head = node;
         }
+
+        return node;
     }
 
     removeAtHead() {
