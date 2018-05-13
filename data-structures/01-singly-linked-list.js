@@ -4,8 +4,8 @@ function Node(data) {
 }
 
 module.exports = class SinglyLinkedList {
-    constructor() {
-        this.head = null;
+    constructor(head = null) {
+        this.head = head;
     }
 
     addAtHead(data) {
