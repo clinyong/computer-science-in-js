@@ -52,6 +52,8 @@ function preOrderTraverse(root) {
 class BinaryTree {
     /**
      * Given inorder and postorder traversal of a tree, construct the binary tree.
+     * Different node must have different value.
+     *
      * @param {number[]} inOrderList
      * @param {number[]} postOrderList
      */
