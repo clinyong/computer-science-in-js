@@ -11,7 +11,7 @@
             "program": "${workspaceRoot}/node_modules/ava/profile.js",
             "args": [
                 "--serial",
-                "/Users/Leo/workfile/computer-science-in-js/sort/__test__/02-quick-sort.test.js"
+                "/Users/Leo/workfile/computer-science-in-js/interview-offer/chp4/__test__/20.test.js"
             ],
             "skipFiles": ["<node_internals>/**/*.js"]
         }
